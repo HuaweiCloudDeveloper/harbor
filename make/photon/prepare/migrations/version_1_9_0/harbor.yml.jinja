@@ -75,7 +75,7 @@ storage_service:
   redirect:
     disabled: {{ value.disabled }}
     {% else %}
-#   # storage backend, default is filesystem, options include filesystem, azure, gcs, s3, swift and oss
+#   # storage backend, default is filesystem, options include filesystem, azure, gcs, s3, swift, oss and obs
 #   # for more info about this configuration please refer https://docs.docker.com/registry/configuration/
   {{ key }}:
       {% for k, v in value.items() %}
@@ -91,7 +91,7 @@ storage_service:
 #   # of registry's and chart repository's containers.  This is usually needed when the user hosts a internal storage with self signed certificate.
 #   ca_bundle:
 
-#   # storage backend, default is filesystem, options include filesystem, azure, gcs, s3, swift and oss
+#   # storage backend, default is filesystem, options include filesystem, azure, gcs, s3, swift, oss and obs
 #   # for more info about this configuration please refer https://docs.docker.com/registry/configuration/
 #   filesystem:
 #     maxthreads: 100

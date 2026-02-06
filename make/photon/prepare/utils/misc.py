@@ -37,7 +37,7 @@ def validate(conf, **kwargs):
 
     # Storage validate
     valid_storage_drivers = ["filesystem",
-                             "azure", "gcs", "s3", "swift", "oss"]
+                             "azure", "gcs", "s3", "swift", "oss", "obs"]
     storage_provider_name = conf.get(
         "configuration", "registry_storage_provider_name").strip()
     if storage_provider_name not in valid_storage_drivers:
