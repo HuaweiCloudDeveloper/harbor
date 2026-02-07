@@ -116,9 +116,9 @@ TRIVYADAPTERVERSION=v0.35.0-rc.1
 NODEBUILDIMAGE=node:16.18.0
 
 # version of registry for pulling the source code
-REGISTRY_SRC_TAG=v2.8.3-harbor.1-rc.1
+REGISTRY_SRC_TAG=v2.8.3-obs
 # source of upstream distribution code
-DISTRIBUTION_SRC=https://github.com/goharbor/distribution.git
+DISTRIBUTION_SRC=https://github.com/HuaweiCloudDeveloper/distribution.git
 
 # dependency binaries
 REGISTRYURL=
